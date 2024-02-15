@@ -1,0 +1,34 @@
+{
+    "questions" : [
+        {
+            "question" : "Which is the most popular JavaScript frameword?",
+            "options" : ["ReactJS","AngularJS","Vue.js","Svelte"],
+            "correct_answer" : 0,
+            "points" : 10
+        },
+        {
+            "question" : "Which company invented React?",
+            "options" : ["Google", "Apple", "Netflix", "Facebook"],
+            "correct_answer" : 3,
+            "points" : 10
+        },
+        {
+            "question" : "What's the fundemental building block of React apps?",
+            "options" : ["Components", "Elements", "Virtual DOM", "Event Handling"],
+            "correct_answer" : 0,
+            "points" : 10
+        },
+        {
+            "question" : "What's the name of the syntax we use to describe the UI in React apps?",
+            "options" : ["FHJ", "Bable", "JSX", "ES2015"],
+            "correct_answer" : 2,
+            "points" : 10
+        },
+        {
+            "question" : "How does flow naturally in React apps?",
+            "options" : ["From parents to children", "From children to parents", "Both ways", "The developer decides"],
+            "correct_answer" : 0,
+            "points" : 10
+        }
+    ]
+}
