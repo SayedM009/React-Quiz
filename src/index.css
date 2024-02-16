@@ -9,6 +9,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 code {
@@ -16,6 +20,92 @@ code {
     monospace;
 }
 
+.btn {
+  background-color: black;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn:hover {
+  background-color: #222;
+}
+
 .main {
   color:white
 }
+
+.start-screen {
+  text-align: center;
+  transition: .5s ease-in-out;
+  animation: fadeInUp .4s  linear forwards;
+}
+
+.isClosed {
+  animation: fadeInOut .4s  linear forwards;
+}
+
+
+
+
+
+.questions {
+  text-align: center;
+  margin-top: 50px;
+  animation: fadeInUp .4s  linear forwards;
+}
+
+.options {
+  margin: auto;
+  width: 450px;
+  margin-top: 50px;
+}
+
+.btn-option {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.btn-option:hover {
+  transform: translateX(30px);
+}
+
+.correct {background-color: #2196F3}
+.wrong {background-color: #FFC107}
+
+@keyframes fadeInUp {
+  0%{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  50%{
+    transform: translateY(50px);
+    opacity: .5;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes fadeInOut {
+  0%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(100px);
+    opacity: 0;
+    display: none;
+  }
+}
+
+
