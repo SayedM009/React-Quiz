@@ -51,14 +51,11 @@ code {
   animation: fadeInOut .4s  linear forwards;
 }
 
-
-
-
-
 .questions {
   text-align: center;
-  margin-top: 50px;
+  margin: 50px auto 0;
   animation: fadeInUp .4s  linear forwards;
+  width: 450px;
 }
 
 .options {
@@ -79,7 +76,26 @@ code {
 
 .correct {background-color: #2196F3}
 .wrong {background-color: #FFC107}
+.answer {transform:translateX(50px)}
+.halfOpacity {
+  opacity:  .5;
+  cursor: no-drop;
+}
 
+.progress-container {
+  margin:20px 0 0 ;
+  text-align: center;
+}
+.progress-container progress,
+.progress-details{
+  width: 450px;
+}
+.progress-details {
+  margin:auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 @keyframes fadeInUp {
   0%{
     transform: translateY(100px);
