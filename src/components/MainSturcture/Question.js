@@ -1,6 +1,5 @@
 
 export default function Question({questions, dispatch, answer}) {
-    const condition = answer !== null
     return <section className="questions">
         <h3>{questions?.question}</h3>
         <div className="options">
@@ -13,11 +12,7 @@ export default function Question({questions, dispatch, answer}) {
         correctAnswer={questions.correct_answer}
         key={i} />)}
         </div>
-        <button 
-        style={{display:"block", marginLeft:"auto"}} 
-        className={`btn ${!condition && "halfOpacity"}`} 
-        disabled={!condition}
-        onClick={() => dispatch({type:"newQuestion"})}>Next</button>
+        
     </section>
 }
 

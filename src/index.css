@@ -96,6 +96,19 @@ code {
   justify-content: space-between;
   align-items: center;
 }
+.finished {
+  background-color: #00BCD4;
+    color: white;
+    margin: 30px auto;
+    width: fit-content;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 @keyframes fadeInUp {
   0%{
     transform: translateY(100px);
