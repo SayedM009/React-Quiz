@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,45 +16,45 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 .btn {
   background-color: black;
-    color: white;
-    padding: 16px 24px;
-    border-radius: 30px;
-    border: none;
-    font-weight: bold;
-    font-family: "Kode Mono", monospace;
-    font-optical-sizing: auto;
-    font-style: normal;
-    cursor: pointer;
-    transition: .3s;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  cursor: pointer;
+  transition: 0.3s;
 }
 .btn:hover {
   background-color: #222;
 }
 
 .main {
-  color:white
+  color: white;
 }
 
 .start-screen {
   text-align: center;
-  transition: .5s ease-in-out;
-  animation: fadeInUp .4s  linear forwards;
+  transition: 0.5s ease-in-out;
+  animation: fadeInUp 0.4s linear forwards;
 }
 
 .isClosed {
-  animation: fadeInOut .4s  linear forwards;
+  animation: fadeInOut 0.4s linear forwards;
 }
 
 .questions {
   text-align: center;
   margin: 50px auto 0;
-  animation: fadeInUp .4s  linear forwards;
+  animation: fadeInUp 0.4s linear forwards;
   width: 450px;
 }
 
@@ -74,35 +74,41 @@ code {
   transform: translateX(30px);
 }
 
-.correct {background-color: #2196F3}
-.wrong {background-color: #FFC107}
-.answer {transform:translateX(50px)}
+.correct {
+  background-color: #2196f3;
+}
+.wrong {
+  background-color: #ffc107;
+}
+.answer {
+  transform: translateX(50px);
+}
 .halfOpacity {
-  opacity:  .5;
+  opacity: 0.5;
   cursor: no-drop;
 }
 
 .progress-container {
-  margin:20px 0 0 ;
+  margin: 20px 0 0;
   text-align: center;
 }
 .progress-container progress,
-.progress-details{
+.progress-details {
   width: 450px;
 }
 .progress-details {
-  margin:auto;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .finished {
-  background-color: #00BCD4;
-    color: white;
-    margin: 30px auto;
-    width: fit-content;
-    padding: 15px 30px;
-    border-radius: 50px;
+  background-color: #00bcd4;
+  color: white;
+  margin: 30px auto;
+  width: fit-content;
+  padding: 15px 30px;
+  border-radius: 50px;
 }
 .footer {
   display: flex;
@@ -110,31 +116,28 @@ code {
   align-items: center;
 }
 @keyframes fadeInUp {
-  0%{
+  0% {
     transform: translateY(100px);
     opacity: 0;
   }
-  50%{
+  50% {
     transform: translateY(50px);
-    opacity: .5;
+    opacity: 0.5;
   }
-  100%{
+  100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
 
-
 @keyframes fadeInOut {
-  0%{
+  0% {
     transform: translateY(0);
     opacity: 1;
   }
-  100%{
+  100% {
     transform: translateY(100px);
     opacity: 0;
     display: none;
   }
 }
-
-
